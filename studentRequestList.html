@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Tutor Inbox</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4A90E2",
+            "background-light": "#F9F9F9",
+            "background-dark": "#101922",
+            "accept": "#50E3C2",
+            "decline": "#D0021B",
+            "text-light": "#333333",
+            "text-dark": "#F9F9F9"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+    <div
+      class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+      <div class="text-text-light dark:text-text-dark flex size-12 shrink-0 items-center justify-start"
+        data-icon="ArrowLeft" data-size="24px" data-weight="regular">
+        <a href="tutorDash.html" class="material-symbols-outlined text-3xl">arrow_back</a>
+      </div>
+      <h2
+        class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center">
+        Inbox</h2>
+      <div class="w-12"></div>
+    </div>
+
+    <div class="px-4 py-3 bg-background-light dark:bg-background-dark">
+      <label class="flex flex-col min-w-40 h-12 w-full">
+        <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+          <div
+            class="text-gray-500 dark:text-gray-400 flex border-none bg-white dark:bg-gray-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <input
+            class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-r-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-0 border-none bg-white dark:bg-gray-800 focus:border-none h-full placeholder:text-gray-500 dark:placeholder:text-gray-400 px-4 pl-2 text-base font-normal leading-normal"
+            placeholder="Search by name or subject" value="" />
+        </div>
+      </label>
+    </div>
+    <div class="flex flex-col gap-4 p-4">
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+        <div class="flex gap-4 bg-transparent justify-between">
+          <div class="flex items-start gap-4">
+            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-[60px] w-[60px]"
+              data-alt="Profile picture of Alexandria Smith"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAHwkhBs1WFRUlgnV4yVSQ0cdK2dvTU7uNklJDy2TJUn87b-DQndfe3LEjCmfMVv3MrsqFQKnShBgGnF2XoUVU4byf2xuDiBngkGfJNlNulNYi1NumTvd7UJ9Fbu-K8XPImc2ODlJuUAgMJDPKOnk7PKpr1wNrKZhNiR7wa49IbNT0xIaGRllt7h992JzUw6GhT7CQ88MWm_es0kiND2_xU0YWos81UESHD53GLX4O99_glckOR-6iL8E3ukxypKMSwx1LBpa-Q93sq");'>
+            </div>
+            <div class="flex flex-1 flex-col justify-center">
+              <p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Alexandria Smith</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">Calculus II</p>
+              <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Hi! I need help
+                preparing for my upcoming midterm. I'm available anytime this week.</p>
+            </div>
+          </div>
+          <div class="shrink-0 text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal">2h ago</div>
+        </div>
+        <div class="flex justify-stretch mt-4">
+          <div class="flex flex-1 gap-3 flex-wrap justify-end">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-gray-700 text-decline text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Decline</span>
+            </button>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accept text-white text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="tutorDash.html" class="truncate">Accept</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+        <div class="flex gap-4 bg-transparent justify-between">
+          <div class="flex items-start gap-4">
+            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-[60px] w-[60px]"
+              data-alt="Profile picture of David Chen"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcpD9usApy3ht2aNaV8DucxpXdMIdL41fFOk5IxX2gUWQ3LBjNCcqeeqcYDpkmztVvZIYpKjTpYWfVxYNnTSaSn-XSlR71xvVcX0P6X9b_PRHy4qhpyvhahmnHoelk3hSKq3Tcr9SpioOTW1Z_MAL12yiMbtNTNmalf0atekNPfxnn0mq0jUUWcYuHbj-kz8cBC2l_ceOkyqgSbzh7gHDfd8kligJRMSFRBx9NgMyvJiKEOrCqWyjcklq2gx3ae--USPSO1YcK3WAz");'>
+            </div>
+            <div class="flex flex-1 flex-col justify-center">
+              <p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">David Chen</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">Intro to Python</p>
+              <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Struggling with loops,
+                would love a session tomorrow afternoon.</p>
+            </div>
+          </div>
+          <div class="shrink-0 text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal">5h ago</div>
+        </div>
+        <div class="flex justify-stretch mt-4">
+          <div class="flex flex-1 gap-3 flex-wrap justify-end">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-gray-700 text-decline text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Decline</span>
+            </button>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accept text-white text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="tutorDash.html" class="truncate">Accept</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+        <div class="flex gap-4 bg-transparent justify-between">
+          <div class="flex items-start gap-4">
+            <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-[60px] w-[60px]"
+              data-alt="Profile picture of Maria Garcia"
+              style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeTXut3I1z32y-V1nIFzjOC-7hMtcg3VWb9mql_f5sHg8-sz5MDrMQh3opB8SSOYGWx25CQKp1CMxYCWN8vTHyZXr9m8I4PNO1qmO2M6UK21EjIGADl6l9HEYo3cT4KRLkK1F7YO_jN8q_9Jv5GNDwk2iFNORcxGRaVy-UzQmsoABStsEAHn4tuL7dSLoI-0d6dj0BB2l3yRWp3PDZ7UA6igpQW9TTEFh0THGfRcAycuegCIX_GG7hRSNqQYE-Htw92It5ZqiCl_1U");'>
+            </div>
+            <div class="flex flex-1 flex-col justify-center">
+              <p class="text-text-light dark:text-text-dark text-base font-bold leading-normal">Maria Garcia</p>
+              <p class="text-gray-600 dark:text-gray-300 text-sm font-normal leading-normal">Organic Chemistry</p>
+              <p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal mt-1">Can we review
+                stereochemistry? Available Friday.</p>
+            </div>
+          </div>
+          <div class="shrink-0 text-gray-500 dark:text-gray-400 text-sm font-medium leading-normal">1d ago</div>
+        </div>
+        <div class="flex justify-stretch mt-4">
+          <div class="flex flex-1 gap-3 flex-wrap justify-end">
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-gray-200 dark:bg-gray-700 text-decline text-sm font-bold leading-normal tracking-[0.015em]">
+              <span class="truncate">Decline</span>
+            </button>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-accept text-white text-sm font-bold leading-normal tracking-[0.015em]">
+              <a href="tutorDash.html" class="truncate">Accept</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <a href="tutorDash.html" class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </a>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <a href="allChat.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </a>
+      <a href="tutorCustomProfile.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
