@@ -72,6 +72,17 @@
       <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
         <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Select a
           Date</h2>
+
+        <div class="flex w-full items-center justify-center gap-6 px-4 pb-4">
+          <div class="flex items-center gap-2">
+            <div class="h-2 w-2 rounded-full bg-green-500"></div>
+            <span class="text-xs text-[#616f89] dark:text-gray-400">Available</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="h-2 w-2 rounded-full bg-[rgb(0,90,156)]/20"></div>
+            <span class="text-xs text-[#616f89] dark:text-gray-400">Scheduled</span>
+          </div>
+        </div>
         <div class="flex flex-wrap items-center justify-center">
           <div class="flex min-w-72 max-w-[336px] flex-1 flex-col gap-0.5">
             <div class="flex items-center p-1 justify-between">
@@ -249,6 +260,14 @@
             <span class="text-slate-600 dark:text-slate-300 font-semibold">Online</span>
           </label>
         </div>
+      </div>
+      <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
+        <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3"> Enter
+          address for in-person location
+        </h2>
+        <textarea
+          class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:border-primary focus:ring-primary"
+          placeholder="Meeting address" rows="4"></textarea>
       </div>
       <div class="bg-white dark:bg-slate-800 p-4 rounded-xl shadow-sm">
         <h2 class="text-slate-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">What

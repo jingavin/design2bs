@@ -135,7 +135,7 @@
           </button>
           <button class="h-12 w-full text-[#111318] dark:text-white text-sm font-medium leading-normal relative">
             <div class="flex size-full items-center justify-center rounded-full">6</div>
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 h-1.5 w-1.5 rounded-full bg-green-500"></div>
+            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 h-1.5 w-1.5 rounded-full bg-purple-500"></div>
           </button>
           <button class="h-12 w-full text-[#111318] dark:text-white text-sm font-medium leading-normal">
             <div class="flex size-full items-center justify-center rounded-full">7</div>
@@ -198,7 +198,7 @@
           </button>
           <button class="h-12 w-full text-white text-sm font-medium leading-normal relative">
             <div class="flex size-full items-center justify-center rounded-full bg-primary">26</div>
-            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 h-1.5 w-1.5 rounded-full bg-white"></div>
+            <div class="absolute bottom-2 left-1/2 -translate-x-1/2 h-1.5 w-1.5 rounded-full bg-green-500"></div>
           </button>
           <button class="h-12 w-full text-[#111318] dark:text-white text-sm font-medium leading-normal">
             <div class="flex size-full items-center justify-center rounded-full">27</div>
@@ -219,6 +219,16 @@
       </div>
     </div>
     <!-- Agenda View -->
+    <div class="flex w-full items-center justify-center gap-6 px-4 pb-4">
+      <div class="flex items-center gap-2">
+        <div class="h-2 w-2 rounded-full bg-green-500"></div>
+        <span class="text-xs text-[#616f89] dark:text-gray-400">Scheduled</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <div class="h-2 w-2 rounded-full bg-purple-500"></div>
+        <span class="text-xs text-[#616f89] dark:text-gray-400">Completed</span>
+      </div>
+    </div>
     <div
       class="flex-1 bg-white dark:bg-background-dark/70 rounded-t-3xl pt-2 pb-24 shadow-[0_-10px_30px_-15px_rgba(0,0,0,0.1)]">
       <!-- SectionHeader -->
@@ -270,6 +280,25 @@
                 <p class="text-[#616f89] dark:text-gray-400 text-sm">Enjoy your day off!</p>
             </div>
             -->
+    </div>
+    <div
+      class="fixed bottom-0 left-0 right-0 bg-white dark:bg-background-dark border-t border-gray-200 dark:border-gray-700 p-2 flex justify-around">
+      <a href="studentDash.html" class="flex flex-col items-center text-primary w-1/4">
+        <span class="material-symbols-outlined">home</span>
+        <span class="text-xs">Home</span>
+      </a>
+      <button class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span class="text-xs">Calendar</span>
+      </button>
+      <a href="allChat.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">chat_bubble</span>
+        <span class="text-xs">Messages</span>
+      </a>
+      <a href="studentProfile.html" class="flex flex-col items-center text-gray-500 dark:text-gray-400 w-1/4">
+        <span class="material-symbols-outlined">account_circle</span>
+        <span class="text-xs">Profile</span>
+        </button>
     </div>
 
   </div>
